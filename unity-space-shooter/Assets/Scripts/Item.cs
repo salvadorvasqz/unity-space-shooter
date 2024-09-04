@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    //Effect
+    public GameObject pickupEffect;
+
     //On collision
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +17,10 @@ public class Item : MonoBehaviour
             Player player = collision.GetComponent<Player>();
             //Add points
             player.points++;
+            //Create effect
+            GameObject effect = Instantiate(pickupEffect, transform.position, transform.rotation);
+            //Destroy effect
+            Destroy(effect, 0.3f);
             //Destroy item
             Destroy(this.gameObject);
         }

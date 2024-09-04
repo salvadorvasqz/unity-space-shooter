@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  obstacleExplosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 3}
 --- !u!1 &4536969220503879972
 GameObject:
   m_ObjectHideFlags: 0

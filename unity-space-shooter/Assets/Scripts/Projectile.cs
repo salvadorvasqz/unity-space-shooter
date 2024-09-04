@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour
 {
     //Projectile speed
     public float speed = 10f;
+    //Effect
+    public GameObject obstacleExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,10 @@ public class Projectile : MonoBehaviour
         //On collision with obstacle
         if (collision.tag == "Obstacle")
         {
+            //Create effect
+            GameObject effect = Instantiate(obstacleExplosion, collision.transform.position, collision.transform.rotation);
+            //Destroy effect
+            Destroy(effect, 1f);
             //Destroy obstacle
             Destroy(collision.gameObject);
         }
