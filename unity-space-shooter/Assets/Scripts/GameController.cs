@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    //Game speed
     public static float gameSpeed;
     [Range(0, 5)]
-    public float gameSpeedRegulator;
+    //Game speed regulator
+    public float gameSpeedRegulator = 3f;
+    //Speed rate
     public float speedRate = 0.5f;
+    //Speed max
     public float gameSpeedMax = 5;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if ( gameSpeedRegulator <= gameSpeedMax) {
+        //If gameSpeedRegulator is equal or less than gameSpeedMax
+        if (gameSpeedRegulator <= gameSpeedMax)
+        {
+            //Update gameSpeedRegulator
             gameSpeedRegulator += speedRate * Time.deltaTime;
         }
+        //Set new value
         gameSpeed = gameSpeedRegulator;
     }
 }

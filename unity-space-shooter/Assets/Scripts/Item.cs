@@ -4,23 +4,17 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    //On collision
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //On collision with player
         if (collision.tag == "Player")
         {
+            //Get player
             Player player = collision.GetComponent<Player>();
+            //Add points
             player.points++;
+            //Destroy item
             Destroy(this.gameObject);
         }
     }
