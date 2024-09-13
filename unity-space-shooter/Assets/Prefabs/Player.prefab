@@ -101,10 +101,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1603689015
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 632331cc3d0d9fb4fa1632622d79a145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3389c4ec65541e3419a760e8d195fed4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,8 +124,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130185111319422217}
-  - component: {fileID: 9215004828629443194}
   - component: {fileID: 7429494312755040561}
+  - component: {fileID: 3602679325163068991}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -143,15 +143,32 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4046939149483415194}
   - {fileID: 1363984883137581818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &9215004828629443194
-CircleCollider2D:
+--- !u!114 &7429494312755040561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5951475721914256387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3596e119341c47924e2859bc3fd4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  projectilePrefab: {fileID: 7554687180749427910, guid: cf8084d888093864092ab57cb4b4563b, type: 3}
+  shootInterval: 0.3
+  shootTimer: 0
+  shootPoint: {fileID: 1363984883137581818}
+--- !u!61 &3602679325163068991
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -183,22 +200,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &7429494312755040561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5951475721914256387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bef3596e119341c47924e2859bc3fd4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 0
-  projectilePrefab: {fileID: 7554687180749427910, guid: cf8084d888093864092ab57cb4b4563b, type: 3}
-  shootInterval: 0.3
-  shootTimer: 0
-  shootPoint: {fileID: 1363984883137581818}
+  m_Size: {x: 0.18, y: 0.24}
+  m_EdgeRadius: 0

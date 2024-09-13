@@ -726,6 +726,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1393755657247333454, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2696255424968874851, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -770,6 +774,10 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 6214804248998244355, guid: cf15de97c27319f4f874293c4b3deff6, type: 3}
+    - target: {fileID: 3288231051882889535, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6759602444050076211, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
       propertyPath: m_Name
       value: ItemSpawner
@@ -885,7 +893,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1603689015
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1596185242
@@ -1176,6 +1184,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1393755657247333454, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2696255424968874851, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1220,6 +1232,10 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 7944063339761055236, guid: 760e0557af7ad64408cf3552ff7d7679, type: 3}
+    - target: {fileID: 3288231051882889535, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6759602444050076211, guid: 5bb9e2e63e56abf4ab88a399d62f00bd, type: 3}
       propertyPath: m_Name
       value: ObstacleSpawner
